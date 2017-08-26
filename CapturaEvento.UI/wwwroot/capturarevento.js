@@ -1,4 +1,4 @@
-﻿$(".buttonevento").on('click', function (event) {
+﻿$(".evento").on('click', function (event) {
 
     var target = $(event.target);
     var evento = target.attr('data-evento-id');
@@ -7,7 +7,6 @@
 });
 
 function enviarEvento(data) {
-    alert("teste " + data);
     $.ajax({
         url: "http://localhost:65462/api/Eventos",
         dataType: "json",
@@ -19,7 +18,7 @@ function enviarEvento(data) {
         beforeSend: function () {
         },
         success: function (dados) {
-            alert("2");
+            console.log(dados);
         },
         error: function (data, err) {
             alert(err);

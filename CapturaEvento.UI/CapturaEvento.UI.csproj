@@ -147,9 +147,6 @@
     <Content Include="wwwroot\jquery-ui.theme.min.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\CapturarEventos.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

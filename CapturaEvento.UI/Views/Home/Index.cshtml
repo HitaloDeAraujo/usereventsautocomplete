@@ -7,7 +7,8 @@
     <title>Autocomplete - Hitalo de Araujo</title>
 
     <link href="~/wwwroot/bootstrap.css" rel="stylesheet" />
-    <script src="~/wwwroot/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    @*<script src="~/wwwroot/jquery-3.2.1.min.js"></script>*@
     <link href="~/wwwroot/jquery-ui.css" rel="stylesheet" />
     <script src="~/wwwroot/jquery-ui.js"></script>
     <link href="~/wwwroot/jquery-ui.min.css" rel="stylesheet" />
@@ -20,17 +21,6 @@
     <link href="~/wwwroot/bulma.css" rel="stylesheet" />
 </head>
 <body>
-
-
-    <button type="button" class="buttonevento" data-evento-id="b1">1</button>
-    <button type="button" class="buttonevento" data-evento-id="b2">2</button>
-
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="~/wwwroot/capturarevento.js"></script>
-
-    
-
     <section class="hero is-info is-large">
         <div class="hero-head">
             <header class="nav">
@@ -45,25 +35,7 @@
                         <span></span>
                         <span></span>
                     </span>
-                    <div class="nav-right nav-menu">
-                        <a class="nav-item is-active">
-                            Home
-                        </a>
-                        <a class="nav-item">
-                            Examples
-                        </a>
-                        <a class="nav-item">
-                            Documentation
-                        </a>
-                        <span class="nav-item">
-                            <a class="button is-info is-inverted">
-                                <span class="icon">
-                                    <i class="fa fa-github"></i>
-                                </span>
-                                <span>Download</span>
-                            </a>
-                        </span>
-                    </div>
+                    
                 </div>
             </header>
         </div>
@@ -76,23 +48,22 @@
                 </h1>
             </div>
         </div>
-        <button type="button" class="buttonevento" data-evento-id="b1">1</button>
 
-         Hero footer: will stick at the bottom 
+         Abaixo estão os eventos que podem ser registrados
         <div class="hero-foot">
             <nav class="tabs is-boxed is-fullwidth">
                 <div class="container">
                     <ul>
-                        <li class="is-active"><a>Overview</a></li>
-                        <li><button class="buttonevento" data-evento-id="b1">Modifiers</button></li>
-                        <li><a>Grid</a></li>
-                        <li><a>Elements</a></li>
-                        <li><a>Components</a></li>
-                        <li><a>Layout</a></li>
+                        <li class="is-active"><a>Clique em uma das opções</a></li>
+                        <li><a class="evento" data-evento-id="compra">Evento Compra</a></li>
+                        <li><a class="evento" data-evento-id="aluga">Evento Aluga</a></li>
+                        <li><a class="evento" data-evento-id="venda">Evento Venda</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
+
+    <script src="~/wwwroot/capturarevento.js"></script>
 </body>
 </html>

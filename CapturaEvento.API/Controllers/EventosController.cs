@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Web.Http;
 using CapturaEvento.Repository.Repositorio;
 using CapturaEvento.Domain.Entities;
+using System.Net;
 
 namespace CapturaEvento.Controllers
 {
@@ -17,11 +18,11 @@ namespace CapturaEvento.Controllers
             Evento evento = new Evento();
 
             evento.@event = nomeEvento;
-            evento.timestamp = new TimeSpan();
+            evento.timestamp = DateTime.Now.TimeOfDay;
 
             eventoRepositorio.Salvar(evento);
 
-            return Request.CreateResponse(System.Net.HttpStatusCode.OK);
+            return Request.CreateResponse<Evento>(HttpStatusCode.OK, evento);
         }
     }
 }

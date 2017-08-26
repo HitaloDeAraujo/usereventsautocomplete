@@ -9,10 +9,5 @@ namespace CapturaEvento.UI.Controllers
         {
             return View();
         }
-
-        public ActionResult CapturarEventos()
-        {
-            return View();
-        }
     }
 }

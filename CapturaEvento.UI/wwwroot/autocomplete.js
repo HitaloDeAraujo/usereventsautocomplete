@@ -1,10 +1,4 @@
 ﻿$(function () {
-
-    function log(message) {
-        $("<div>").text(message).prependTo("#log");
-        $("#log").scrollTop(0);
-    }
-
     $("#evento").autocomplete({
         source: function (request, response) {
             $.ajax({
@@ -22,7 +16,7 @@
                 }
             });
         },
-        minLength: 3,
+        minLength: 2,
         select: function (event, ui) {
             log(ui.item ?
               "Selected: " + ui.item.label :
