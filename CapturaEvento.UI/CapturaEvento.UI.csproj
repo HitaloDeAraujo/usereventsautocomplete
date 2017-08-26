@@ -134,6 +134,8 @@
     <Content Include="Views\Web.config" />
     <Content Include="wwwroot\autocomplete.js" />
     <Content Include="wwwroot\bootstrap.css" />
+    <Content Include="wwwroot\capturarevento.js" />
+    <Content Include="wwwroot\bulma.css" />
     <Content Include="wwwroot\jquery-3.2.1.min.js" />
     <Content Include="wwwroot\jquery-ui.css" />
     <Content Include="wwwroot\jquery-ui.js" />
@@ -144,12 +146,17 @@
     <Content Include="wwwroot\jquery-ui.theme.css" />
     <Content Include="wwwroot\jquery-ui.theme.min.css" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Home\CapturarEventos.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\bulma.css.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
